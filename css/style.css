@@ -1,0 +1,155 @@
+@media (max-width: 1200px) {
+  .container {
+    max-width: 970px;
+  }
+}
+
+@media (max-width: 992px) {
+  .container {
+    max-width: 750px;
+  }
+}
+
+@media (max-width: 767px) {
+  .container {
+    max-width: none;
+  }
+}
+
+.container {
+  font-size: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+  max-width: 1000px;
+  min-width: 600px;
+  margin: 0 auto;
+  padding: 0 0;
+}
+
+.container__wrap {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(5, auto-fit);
+  grid-column-gap: 0;
+  grid-row-gap: 2rem;
+}
+
+.header {
+  display: grid;
+  grid-area: 1 / 1 / 1/ 6;
+  max-height: 10rem;
+}
+
+.header__logo {
+  align-self: center;
+  justify-content: center;
+}
+
+.header__text {
+  grid-area: 1 / 2/ 1/ 6;
+  align-self: center;
+  font-size: 2rem;
+  color: #16132A;
+  padding-left: 2rem;
+}
+
+.header__nav {
+  grid-area: 1 / 4/ 1/ 6;
+  align-self: center;
+  justify-self: end;
+  list-style-type: none;
+  margin: 0 0 0 0;
+}
+
+.menu__item {
+  display: inline-block;
+  text-align: center;
+  padding-left: 5rem;
+  text-decoration: none;
+  text-shadow: cadetblue;
+  font-weight: bold;
+}
+
+.menu__item-active {
+  color: #0F0F0F;
+  text-decoration: none;
+}
+
+.menu__item-active:hover {
+  color: #BEB7DF;
+}
+
+.head {
+  grid-area: 2 / 1 / 2 / 6;
+}
+
+.head__foto {
+  max-width: 40%;
+  clip-path: circle(50% at 50% 50%);
+}
+
+.about {
+  grid-area: 2 / 3 / 5 / 6;
+  padding-left: 4rem;
+}
+
+.about__text {
+  font-weight: 500;
+  color: #2D2E2E;
+}
+
+.about__career {
+  background-color: #BEB7DF;
+  border: 0.3rem solid #BEB7DF;
+  border-radius: 10px;
+}
+
+.portfolio {
+  grid-area: 3 / 2 / 4 / 5;
+}
+
+.portfolio__title {
+  display: flex;
+  align-self: center;
+  justify-content: center;
+}
+
+.portfolio__foto {
+  display: flex;
+  justify-content: center;
+  max-width: 100%;
+  border: #0F0F0F 1px solid;
+}
+
+.interests {
+  grid-area: 4 / 1 / 5 / 6;
+}
+
+.interests__button {
+  display: block;
+  margin: auto;
+}
+
+.interests__text {
+  color: red;
+}
+
+.footer {
+  grid-area: 5 / 1 / 5 / 6;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #BEB7DF;
+}
+
+.footer__social {
+  list-style-type: none;
+  display: flex;
+  padding-left: 0px;
+}
+
+.footer__link {
+  text-decoration: none;
+  font-size: 2rem;
+  margin-left: 15px;
+  color: #BEB7DF;
+}
