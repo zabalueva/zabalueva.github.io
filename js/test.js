@@ -41,5 +41,12 @@ function getCareer() {
     career.removeEventListener('click', getCareer);
 };
 
-let career = document.getElementById("career");
-career.addEventListener('click', getCareer); 
+document.getElementById("career").addEventListener('click', getCareer); 
+
+
+document.getElementById("burger").onclick = function () {
+    open()
+};
+function open() {
+    document.getElementById("menu").classList.toggle("show");
+}
