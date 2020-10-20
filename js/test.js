@@ -37,7 +37,7 @@ function getCareer() {
 
     let section = document.getElementById("about");
     section.appendChild(p);    
-    document.getElementById("portfolio").style.paddingTop = "15rem";
+    document.getElementById("portfolio").style.paddingTop = "5em";
     career.removeEventListener('click', getCareer);
 };
 
