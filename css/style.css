@@ -1,3 +1,16 @@
+/* 
+:root {
+    background-color: #fefefe;
+    filter: invert(100%);   
+}
+
+ * {
+    background-color: inherit;
+}
+
+img:not([src*=".svg"]) {  
+    filter: invert(100%);
+} */
 .container {
   font-size: 1.5em;
   font-family: Arial, Helvetica, sans-serif;
@@ -76,10 +89,9 @@
 .about {
   grid-area: 2 / 3 / 3 / 6;
   padding-left: 3em;
-}
-
-.about__text {
-  color: #2d2555;
+  /*     &__text {
+        color: $color_hard;        
+    } */
 }
 
 .about__career {

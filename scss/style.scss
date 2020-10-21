@@ -2,7 +2,19 @@ $color_hard:#2d2555;
 $color_harder: #1f1a3b;
 $color_light:#c2b7ff;
 $color_lighter: #e1dbff;
+/* 
+:root {
+    background-color: #fefefe;
+    filter: invert(100%);   
+}
 
+ * {
+    background-color: inherit;
+}
+
+img:not([src*=".svg"]) {  
+    filter: invert(100%);
+} */
 
 .container {
     font-size: 1.5em;
@@ -86,9 +98,9 @@ $color_lighter: #e1dbff;
     grid-area: 2 / 3 / 3 / 6; 
     padding-left: 3em;
 
-    &__text {
+/*     &__text {
         color: $color_hard;        
-    }
+    } */
 
     &__career {
         background-color: $color_light;
