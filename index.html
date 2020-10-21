@@ -9,7 +9,7 @@
 </head>
 
 <body class="container">
-    <div class="container__wrap">
+    <div class="container__wrap wrap">
         <header class="header">
             <span class="header__logo"><img src="img/logo.svg" alt="logo"></span>
 
@@ -17,22 +17,18 @@
 
             <nav class="header__nav nav">
                 <div><span id="burger" class="burger">
-                <p class="item"></p>
-                <p class="item"></p>
-                <p class="item"></p>
-                </span>
+                        <p class="item"></p>
+                        <p class="item"></p>
+                        <p class="item"></p>
+                    </span>
 
-                <ul id="menu" class="nav__menu menu">
-                    <li class="menu__item"><a href="#about" class="menu__item-active">About</a></li>
-                    <li class="menu__item"><a href="#portfolio" class="menu__item-active">Examples</a></li>
-                    <li class="menu__item"><a href="#footer" class="menu__item-active">Contacts</a></li>
-                </ul>
-            </div>
+                    <ul id="menu" class="nav__menu menu">
+                        <li class="menu__item"><a href="#about" class="menu__item-active">About</a></li>
+                        <li class="menu__item"><a href="#portfolio" class="menu__item-active">Examples</a></li>
+                        <li class="menu__item"><a href="#footer" class="menu__item-active">Contacts</a></li>
+                    </ul>
+                </div>
             </nav>
-
-
-
-
         </header>
 
         <article class="head">
@@ -42,48 +38,54 @@
         <section class="about" id="about">
             <div class="about__text">
                 <p>Меня зовут Забалуева Елена и это мой первый сайт.
-                    Разумеется, он будет дорабатываться и становиться всё интереснее и интереснее)
+                    Разумеется, он будет дорабатываться и становиться всё чудесатее и чудесатее)
                 </p>
 
                 <p>Я самостоятельно изучаю фронтенд на свободных ресурсах (htmlacademy, freeCodeCamp, learnjavascript,
                     githowto).
                 </p>
-                <p>Очень люблю учиться и добиваться результата. Изучила основы HTML и CSS и решила сразу применять их на практике, создав этот сайт-портфолио.
+                <p>Очень люблю учиться и добиваться результата. Изучила основы HTML и CSS и решила сразу применять их на
+                    практике, создав этот сайт-портфолио.
                     Также на нём я выкладываю детали, которые я научилась создавать, изучая JavaScript.
                 </p>
-                <p>Мне 32 года, и если вам интересно, чем же я занималась до "рокового" 2020, то подробности образования и карьеры <span id="career" class="about__career"> читайте тут.</span>
+                <p>Мне 32 года, и если вам интересно, чем же я занималась до "рокового" 2020, то подробности карьеры
+                    <span id="career" class="about__career"> читайте тут.</span>
                 </p>
             </div>
         </section>
 
         <section class="portfolio" id="portfolio">
-            <h2 class="portfolio__title">Примеры моих работ</h2>
+            <h2 class="portfolio__heading">Примеры моих работ</h2>
 
-            <p class="portfolio__title" id="title">Все примеры моих работ можно посмотреть на github</p>
+            <p class="portfolio__title" id="title">Код этих работ можно посмотреть на GitHub
+                <span class="portfolio__link"><a href="https://github.com/zabalueva" class="portfolio__link"><i
+                            class="fab fa-github"></i></a></span>
+            </p>
 
-            <span class="portfolio__title">
+            <div class="portfolio__item">
                 <a href="http://htmlpreview.github.io/?https://github.com/zabalueva/golden/blob/master/index.html"
                     class="portfolio__foto">
                     <img src="img/golden.jpg" alt="golden" class="portfolio__foto">
                 </a>
-            </span>
-            <p class="portfolio__title">
-                <a href="http://htmlpreview.github.io/?https://github.com/zabalueva/golden/blob/master/index.html"
-                    class="portfolio__foto">
-                    Учебный проект от WayUp студии </a>
-            </p>
+                <p class="portfolio__title">
+                    <a href="http://htmlpreview.github.io/?https://github.com/zabalueva/golden/blob/master/index.html"
+                        class="portfolio__link">
+                        Учебный проект от WayUp студии (вёрстка (float,flex), знакомство с БЭМ) </a>
+                </p>
+            </div>
 
-            <span class="portfolio__title">
+            <div class="portfolio__item">
                 <a href="http://htmlpreview.github.io/?https://github.com/zabalueva/mamon_layout/blob/master/index.html"
                     class="portfolio__foto">
                     <img src="img/mageeva.jpg" alt="mageeva" class="portfolio__foto">
                 </a>
-            </span>
+            
             <p class="portfolio__title">
                 <a href="http://htmlpreview.github.io/?https://github.com/zabalueva/golden/blob/master/index.html"
-                    class="portfolio__foto">
-                    Небольшой лендинг на основе макета "mamon" </a>
+                    class="portfolio__link">
+                    Небольшой лендинг на основе макета "mamon" (вёрстка (flex, grid), слайдер jаvascript) </a>
             </p>
+        </div>
         </section>
 
         <section class="interests">
@@ -99,11 +101,14 @@
         </section>
 
         <footer class="footer" id="footer">
-            
+
             <ul class=footer__social>
-                <li><a href="https://github.com/zabalueva" target="_blank" class="footer__link"><i class="fab fa-github"></i></a></li>
-                <li><a href="https://vk.com/zabaluevae" target="_blank" class="footer__link"><i class="fab fa-vk"></i></i></a></li>
-                <li><a href="https://www.instagram.com/ave_ega/" target="_blank" class="footer__link"><i class="fab fa-instagram"></i></i></a></li>
+                <li><a href="https://github.com/zabalueva" target="_blank" class="footer__link"><i
+                            class="fab fa-github"></i></a></li>
+                <li><a href="https://vk.com/zabaluevae" target="_blank" class="footer__link"><i
+                            class="fab fa-vk"></i></i></a></li>
+                <li><a href="https://www.instagram.com/ave_ega/" target="_blank" class="footer__link"><i
+                            class="fab fa-instagram"></i></i></a></li>
             </ul>
 
             <!-- <button class="footer__button">

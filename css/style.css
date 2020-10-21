@@ -1,7 +1,7 @@
 .container {
-  font-size: 1.2em;
+  font-size: 1.5em;
   font-family: Arial, Helvetica, sans-serif;
-  max-width: 1000px;
+  max-width: 1400px;
   min-width: 600px;
   margin: 0 auto;
   padding: 0 0;
@@ -15,10 +15,14 @@
   grid-row-gap: 2rem;
 }
 
+/* .wrap > :nth-child(even) {
+        background-color: $color_light;
+    } */
 .header {
   display: grid;
   grid-area: 1 / 1 / 1/ 6;
   max-height: 10em;
+  /* background-color: $color_lighter; */
 }
 
 .header__logo {
@@ -30,7 +34,7 @@
   grid-area: 1 / 2/ 1/ 6;
   align-self: center;
   font-size: 2em;
-  color: #16132A;
+  color: #2d2555;
   padding-left: 2rem;
 }
 
@@ -52,12 +56,12 @@
 }
 
 .menu__item-active {
-  color: #0F0F0F;
+  color: #2d2555;
   text-decoration: none;
 }
 
 .menu__item-active:hover {
-  color: #BEB7DF;
+  color: #c2b7ff;
 }
 
 .head {
@@ -75,23 +79,37 @@
 }
 
 .about__text {
-  color: #2D2E2E;
+  color: #2d2555;
 }
 
 .about__career {
-  background-color: #BEB7DF;
-  border: 0.1rem solid #BEB7DF;
+  background-color: #c2b7ff;
+  border: 0.1rem solid #c2b7ff;
   border-radius: 10px;
+  cursor: pointer;
 }
 
 .portfolio {
   grid-area: 3 / 2 / 4 / 5;
+  display: grid;
+}
+
+.portfolio__heading {
+  display: flex;
+  align-self: center;
+  justify-content: center;
+  color: #2d2555;
 }
 
 .portfolio__title {
   display: flex;
-  align-self: center;
+  color: #2d2555;
   justify-content: center;
+  font-weight: 600;
+}
+
+.portfolio__link {
+  text-decoration: none;
 }
 
 .portfolio__foto {
@@ -99,6 +117,9 @@
   justify-content: center;
   max-width: 100%;
   border: #0F0F0F 1px solid;
+  color: #2d2555;
+  text-decoration: none;
+  font-weight: 600;
 }
 
 .interests {
@@ -119,7 +140,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  color: #BEB7DF;
+  color: #2d2555;
 }
 
 .footer__social {
@@ -131,8 +152,12 @@
 .footer__link {
   text-decoration: none;
   font-size: 2rem;
-  margin-left: 15px;
-  color: #BEB7DF;
+  margin-left: 0.5em;
+  color: #c2b7ff;
+}
+
+.footer__contacts {
+  font-weight: 600;
 }
 
 @media (max-width: 1200px) {
@@ -164,7 +189,7 @@
     width: 30px;
     height: 4px;
     margin: 0.5em auto;
-    background: #222;
+    background: #1f1a3b;
   }
   .show {
     display: grid;

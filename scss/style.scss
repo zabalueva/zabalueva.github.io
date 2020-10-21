@@ -1,11 +1,13 @@
-$color_hard: greenyellow;
-$color_2: red;
+$color_hard:#2d2555;
+$color_harder: #1f1a3b;
+$color_light:#c2b7ff;
+$color_lighter: #e1dbff;
 
 
 .container {
-    font-size: 1.2em;
+    font-size: 1.5em;
     font-family: Arial, Helvetica, sans-serif;
-    max-width: 1000px;
+    max-width: 1400px;
     min-width: 600px;
     margin: 0 auto;
     padding: 0 0;
@@ -19,10 +21,15 @@ $color_2: red;
     }
 }
 
+    /* .wrap > :nth-child(even) {
+        background-color: $color_light;
+    } */
+
 .header { 
     display: grid;
     grid-area: 1 / 1 / 1/ 6; 
     max-height: 10em;
+    /* background-color: $color_lighter; */
 
     &__logo {
         align-self: center;
@@ -33,7 +40,7 @@ $color_2: red;
         grid-area: 1 / 2/ 1/ 6;
         align-self: center;
         font-size: 2em;
-        color: #16132A;
+        color: $color_hard;
         padding-left: 2rem; 
     }   
 
@@ -57,12 +64,12 @@ $color_2: red;
     }
     
     &__item-active {
-        color: #0F0F0F;
+        color: $color_hard;
         text-decoration: none;
     }
 
     &__item-active:hover {
-        color:#BEB7DF;
+        color:$color_light;
     }
 }
 
@@ -80,23 +87,37 @@ $color_2: red;
     padding-left: 3em;
 
     &__text {
-        color:#2D2E2E;        
+        color: $color_hard;        
     }
 
     &__career {
-        background-color: #BEB7DF ;
-        border: 0.1rem solid #BEB7DF;
+        background-color: $color_light;
+        border: 0.1rem solid $color_light;
         border-radius: 10px;
+        cursor: pointer;
     }
 }
 
 .portfolio {
     grid-area: 3 / 2 / 4 / 5 ; 
+    display: grid;
 
-    &__title {
+    &__heading {
         display: flex;
         align-self: center;
         justify-content: center;
+        color: $color_hard;
+    }
+
+    &__title {
+        display: flex;
+        color: $color_hard;
+        justify-content: center;
+        font-weight: 600;
+    }
+
+    &__link {
+        text-decoration: none;
     }
 
     &__foto {
@@ -104,6 +125,9 @@ $color_2: red;
         justify-content: center;
         max-width: 100%;
         border: #0F0F0F 1px solid;
+        color: $color_hard;
+        text-decoration: none;
+        font-weight: 600;
     }
 }
 
@@ -127,19 +151,22 @@ $color_2: red;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    color: #BEB7DF;
+    color: $color_hard;
 
     &__social {
         list-style-type: none;
         display: flex;
         padding-left: 0px;
-
     }
     &__link {
         text-decoration: none;
         font-size: 2rem;
-        margin-left: 15px;
-        color: #BEB7DF;
+        margin-left: 0.5em;
+        color: $color_light;
+    }
+
+    &__contacts {
+        font-weight: 600;
     }
 }
 
@@ -170,7 +197,7 @@ $color_2: red;
             width: 30px;
             height: 4px;
             margin: 0.5em auto;
-            background: #222;
+            background: $color_harder;
         }
     }
     .show {
