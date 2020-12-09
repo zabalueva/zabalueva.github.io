@@ -14,13 +14,13 @@ function getDate() {
     let hours = date.getHours();
     let mins = date.getMinutes();
     let secs = date.getSeconds();
-    if(secs < 10) {
+    if (secs < 10) {
         secs = '0' + secs;
     };
-    if(mins < 10) {
+    if (mins < 10) {
         mins = '0' + mins;
     };
-    if(hours < 10) {
+    if (hours < 10) {
         hours = '0' + hours;
     };
     document.getElementById("time").innerHTML = hours + ":" + mins + ":" + secs;
@@ -36,17 +36,43 @@ function getCareer() {
     p.appendChild(node);
 
     let section = document.getElementById("about");
-    section.appendChild(p);    
+    section.appendChild(p);
     document.getElementById("portfolio").style.paddingTop = "5em";
     career.removeEventListener('click', getCareer);
+    setTimeout(() => node.remove(), 15000)
 };
 
-document.getElementById("career").addEventListener('click', getCareer); 
-
-
+document.getElementById("career").addEventListener('click', getCareer);
 document.getElementById("burger").onclick = function () {
     open()
 };
 function open() {
     document.getElementById("menu").classList.toggle("show");
 }
+
+
+/* function skills(base, base2, ...courses) {
+    for (let item of courses) {
+        item = item.toUpperCase();
+    }
+}
+
+skills("HTML", "CSS", "figma", "Algorithms"); */
+
+
+/* function Counter() {
+    let count = 0;
+
+    this.up = function () {
+        return ++count;
+    };
+    this.down = function () {
+        return --count;
+    };
+}
+
+let counter = new Counter();
+
+alert(counter.up()); // ?
+alert(counter.up()); // ?
+alert(counter.down()); // ? */
