@@ -49,3 +49,8 @@ Orion Innovation'2021
 Russian — Native  
 English — B1 — Intermediate
 
+1. Task: https://github.com/zabalueva/rsschool-cv/blob/gh-pages/cv.md
+2. Screenshot: 
+3. Deploy: https://zabalueva.github.io/rsschool-cv/cv
+4. Done 19.01.2021 / deadline 28.02.2021
+5. Score: 100 / 100
