@@ -1,7 +1,7 @@
 # Zabalueva Elena
 
-+79056649668
-age_eva@mail.ru     
++79056649668  
+age_eva@mail.ru       
 @zabalueva
 
 ## About
@@ -17,37 +17,35 @@ HTML5, CSS3, SCSS, БЭМ, JavaScript (ES6), ReactJS, Webpack, Git, VS Code
 ```
 function addCircle(e) {
     setCircles(
-      [...circles, 
-      { coordX: e.pageX, coordY: e.pageY, id: circles.length }
-      ]
+        [...circles, 
+        { coordX: e.pageX, coordY: e.pageY, id: circles.length }
+        ]
     )
-  }
+}
 ```
 
 ## Experience
-My graduate work for company Orion Innovation after courses
-[NewYear2021](https://zabalueva.github.io/react_first/)
+My graduate work for company Orion Innovation after courses  
+[Project NewYear2021](https://zabalueva.github.io/react_first/)
 
-[Github](https://zabalueva.github.io/react_first/)
+[Code ](https://zabalueva.github.io/react_first/)
 
 
 ## Higher education 
-Nizhny Novgorod State Technical University
-2010
+Nizhny Novgorod State Technical University'2010   
 Public Relations 
 
-Nizhny Novgorod State Technical University
-2021
+Nizhny Novgorod State Technical University'2021  
 Radio Engineering  
 
 ## Сourses
-HTMLACADEMY'2020
+HTMLACADEMY'2020  
 "HTML and CSS"
 
-Orion Innovation'2021
+Orion Innovation'2021  
 "Web-development JavaScript"
 
 ## Languages
-Russian — Native
+Russian — Native  
 English — B1 — Intermediate
 
